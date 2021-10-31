@@ -2,7 +2,6 @@ from numpy import string_
 import spacy
 from spacy.symbols import  VERB, agent,auxpass
 nlp = spacy.load("en_core_web_sm")
-# file_name = 'C:/Users/Laura/Documents/Articoli/2021spaCy/eshop.txt'
 print ("Which file do you want to analyse? 1 eshop; 2 smartHouse")
 reqdoc = string_(input()) 
 file_name = reqdoc
