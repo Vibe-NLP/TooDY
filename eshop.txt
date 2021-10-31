@@ -2,7 +2,8 @@ R1 The system shall enable user to enter the search text on the screen.
 R2 The system shall display all the matching products based on the search.
 R3 The system possibly notifies with a pop-up the user when no matching product is found on the search.
 R4 The system shall allow a user to create his profile and set his credentials.
-R5 The system shall authenticate user credentials to enter the profile.                R6 The system shall display the list of active and/or the list of completed orders in the customer profile.
+R5 The system shall authenticate user credentials to enter the profile.                
+R6 The system shall display the list of active orders and/or the list of completed orders in the customer profile.
 R7 The system shall maintain customer email information as a required part of customer profile.
 R8 The system shall send an order confirmation to the user through email
 R9 The system shall allow an user to add and remove products in the shopping cart.
@@ -13,5 +14,5 @@ R13 The system may display the current tracking information about the order.
 R14 The system shall display the available payment methods.
 R15 The system shall allow the user to select the payment method for order.
 R16 After delivery, the system may enable the users to enter their reviews and ratings.
-R17 Shipping time should be as fast as possible
-R18 The system must report the available products, if the availability of these are are less than  10 percent the system should show a pop-up 
+R17 Shipping time should be as fast as possible.
+R18 The system must report the available products, if the availability of these are are less than  10 percent the system should show a pop-up.
