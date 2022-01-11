@@ -1,17 +1,21 @@
 from numpy import string_
 import spacy
 from spacy.symbols import  VERB, agent,auxpass
+#To apply the trained pipeline, we load it. 
+#This will assign to nlp an object of type Language containing all the components and data 
+#needed to process the text string. 
 nlp = spacy.load("en_core_web_sm")
 print ("Which file do you want to analyse?")
 reqdoc = string_(input()) 
 file_name = reqdoc
-
 introduction_file_text = open(file_name).read()
+#we call the nlp object on the text to be analysed, this will return an oject, 
+#called doc, that contains all the generated information
 doc = nlp(introduction_file_text)
 verbs = []
 sentences=[]
 conjunction=[]
-
+#optional, uncomment to display the syntactic relations
 #spacy.displacy.serve(doc, style='dep')
 
 for sent in doc.sents:
