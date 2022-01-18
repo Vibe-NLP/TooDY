@@ -1,5 +1,6 @@
 from numpy import string_
 import spacy
+from spacy import displacy
 from spacy.symbols import  VERB, agent,auxpass
 #To apply the trained pipeline, we load it. 
 #This will assign to nlp an object of type Language containing all the components and data 
@@ -16,7 +17,7 @@ verbs = []
 sentences=[]
 conjunction=[]
 #optional, uncomment to display the syntactic relations
-#spacy.displacy.serve(doc, style='dep')
+#displacy.serve(doc, style='dep')
 
 for sent in doc.sents:
     for token in sent:
