@@ -1,6 +1,7 @@
 import spacy
 from spacy.symbols import NOUN, cc
 from spacy import displacy
+from numpy import string_
 #To apply the trained pipeline, we load it. 
 #This will assign to nlp an object of type Language containing all the components and data 
 #needed to process the text string. 
