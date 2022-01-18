@@ -16,7 +16,7 @@ doc = nlp(introduction_file_text)
 verbs = []
 sentences=[]
 conjunction=[]
-#optional, uncomment to display the syntactic relations
+# optional, uncomment to display the syntactic relations, rendering on the browser: http://localhost:5000/
 #displacy.serve(doc, style='dep')
 
 for sent in doc.sents:

@@ -1,13 +1,16 @@
 from numpy import string_
 import spacy
+from spacy import displacy
 from spacy.symbols import  VERB, agent,auxpass
 nlp = spacy.load("en_core_web_sm")
-print ("Which file do you want to analyse? 1 eshop; 2 smartHouse")
+print ("Which file do you want to analyse?")
 reqdoc = string_(input()) 
 file_name = reqdoc
 
 introduction_file_text = open(file_name).read()
 doc = nlp(introduction_file_text)
+#optional, uncomment to display the syntactic relations, rendering on the browser: http://localhost:5000/
+#spacy.displacy.serve(doc, style='dep')
 
 verbs =[]
 count=0

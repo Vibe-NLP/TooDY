@@ -13,7 +13,7 @@ introduction_file_text = open(file_name).read()
 #we call the nlp object on the text to be analysed, this will return an oject, 
 #called doc, that contains all the generated information
 doc = nlp(introduction_file_text)
-#optional, uncomment to display the syntactic relations
+#optional, uncomment to display the syntactic relations, rendering on the browser: http://localhost:5000/
 #spacy.displacy.serve(doc, style='dep')
 
 sentences=[]
